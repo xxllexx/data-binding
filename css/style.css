@@ -1,0 +1,52 @@
+body > section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  white-space: nowrap; }
+  body > section > div {
+    -webkit-transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%; }
+  body > section ul.pager {
+    margin: 0 5px;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right; }
+    body > section ul.pager li {
+      list-style: none;
+      display: inline-block; }
+      body > section ul.pager li button {
+        border: 0;
+        background-color: #333;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        margin: 5px;
+        cursor: pointer; }
+        body > section ul.pager li button:hover {
+          background-color: #666; }
+        body > section ul.pager li button:focus {
+          outline: none; }
+        body > section ul.pager li button.active {
+          background-color: #fff; }
+  body > section article.slide {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #E9E7E7;
+    vertical-align: top; }
+    body > section article.slide iframe {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #D6D6D6;
+      width: 70%;
+      height: 400px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.02); }

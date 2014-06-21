@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/ws.js"></script>
+    <script type="text/javascript" src="js/wsapp.js"></script>
+    <style>
+        body{
+            background-color: #fff;
+            font-family: 'Helvetica'
+        }
+    </style>
+
+</head>
+<body>
+    <div ws-controller="firstCtrl">
+        <h2>{{messageHeader}}</h2>
+        <p>{{messageBody}}</p>
+        <div>{{inputValue}}</div>
+        <div>{{someFunction()}}</div>
+        <div>input: <input type="text" ws-model="inputValue"/></div>
+        <div>input: <input type="text" value="input {{inputValue}}"/></div>
+        <div>
+            <textarea ws-model="messageBody">{{messageBody}}</textarea>
+        </div>
+        <button ws-click="onFuckingClick">{{buttonName}}</button>
+        <button ws-click="onDelProperty">Delete</button>
+    </div>  
+</body>
+</html>
